@@ -1,0 +1,130 @@
+
+
+  .dashboard {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #f8f9fc, #e8f0fe);
+    padding: 30px;
+  }
+  
+
+  .card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 18px;
+    border: 3px solid #4a90e2;
+  }
+  
+  .user-info .user-name {
+    margin: 0;
+    font-size: 1.75rem;
+    color: #222;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  
+  .user-email {
+    margin: 6px 0 0;
+    color: #777;
+    font-size: 0.95rem;
+  }
+  
+
+  .profile-form .form-group {
+    margin-bottom: 22px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: all 0.2s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #4a90e2;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  }
+  
+  .save-btn {
+    width: 100%;
+    padding: 14px;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .save-btn:hover {
+    background: #357ab8;
+    transform: translateY(-1px);
+  }
+  
+.two-column {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .two-column {
+      flex-direction: row;
+    }
+  
+    .info-card,
+    .form-card {
+      width: 48%;
+    }
+  }
+  
+  .info-details {
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .info-details p {
+    margin-bottom: 10px;
+  }
+  
