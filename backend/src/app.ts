@@ -4,12 +4,12 @@ import handleUser from "./routes/user";
 const app = express();
 import cors from "cors";
 
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "*", credentials: true }));
 
 app.use(express.json());
 
 app.use("/api/auth", handleAuth);
-app.use("/api/user",handleUser);
+app.use("/api/user", handleUser);
 
 app.get("/", (req, res) => {
   res.send("Hello");

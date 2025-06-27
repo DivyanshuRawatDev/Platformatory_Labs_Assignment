@@ -3,10 +3,7 @@ import { BASE_URL } from "../../configs/common";
 
 export async function updateCrudCrud(user: any) {
   try {
-    // console.log(JSON.stringify(user, null, 2));
-
     const url = `${BASE_URL}/users/${user._id}`;
-    // console.log("URL:", url);
 
     const { _id, ...userWithoutId } = user;
 
